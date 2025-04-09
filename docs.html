@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anim8 documentation</title>
+    <link rel='icon' type='image/x-icon' href='https://coding-master5.github.io/Anim8/a8.svg'>
+    <style>
+      body {
+        text-align:center;
+        font-family:monospace;
+      }
+      span {
+        padding:3px;
+        background:#cccccc;
+        border-radius:2px;
+        display:inline-block;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <header style='background:#2d3859;padding:100px;'>
+      <h1 style='color:#fff;'>Anim8 documentation</h1>
+    </header>
+    <br>
+    <br>
+    <h4>Anim8 is a graphic language that allows ease of access to basic image creation in the browser.<br>See the full project on <a href='https://github.com/Coding-master5/Anim8'>GitHub</a>.</h4>
+    <hr>
+    <h1>Basics</h1>
+    <p>Anim8 is a very simple and straightforward language. It uses JavaScript to run, so its uses are limited. However, it is still an easy and effective way to display dynamic images in your webpage. While currently its capability is very low, rest assured there will be future updates. Now let's get started with some Anim8.</p>
+    <br>
+    <h2>Environment</h2>
+    <p>Anim8 is an interpreted language, so it can normally only run in a web browser.</p>
+    <p>In order to run Anim8 in your HTML projects, you must include this code anywhere in the document:</p>
+    <span>&#60;script src='https://coding-master5.github.io/Anim8/main.js'&#62;&#60;/script&#62;</span>
+    <p>After that, you can create a new object of the type "Anim8" and write:</p>
+    <span>
+      var anim8 = new Anim8;<br>
+      anim8.parse('//your code here');
+    </span>
+    <p>Anim8 is run through JavaScript and uses a custom class with a function, <span>parse()</span>, to run its code. Now that your environment is set up, let's get anim8ing!</p>
+    <h2>Your first Anim8 script</h2>
+    <p>Let's write a simple Anim8 script, and then discuss it.</p>
+    <span>
+      Image init();<br>
+      new circle '#ff0000', '50%', '50%', '50';<br>
+      Image end();
+    </span>
+    <br>
+    <p>Congrats, you wrote your very first Anim8 script! Now let's discuss what it's doing.</p>
+    <b>Image init();</b>
+    <p>This keyword is required in all Anim8 scripts. It tells the code to create a new image to append items to. It belongs to the <span>Image</span> class, which is used to initialize and finish the image.</p>
+    <b>new circle 'color', 'xPos', 'yPos', 'radius'</b>
+    <p>This keyword creates a new circle with the specified attributes. If none are given, the values default to a generic black circle. This belongs to the <span>new</span> class, which is used to add elements to the image.</p>
+    <b>Image end();</b>
+    <p>This keyword is very similar to <span>Image init();</span>, except instead of creating the image, it saves the image as a <span>dataurl</span> and returns it to the function which called it.</p>
+    <i>Notice: this page is unfinished. Please refer to the README.md file in the GitHub repository or the JavaScript code for tutorial information.</i>
+  </body>
+</html>
