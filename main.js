@@ -4,10 +4,10 @@ class Anim8 {
     var img;
     code.forEach((ln) => {
       if ('Image' in ln) {
-        if (ln == 'Image init()') {
+        if ('Image init()' in ln) {
           img = document.createElement('svg');
         }
-        else if (ln == 'Image end()') {
+        else if ('Image end()' in ln) {
           var canvas = document.createElement('canvas');
           var ctx = canvas.getContext('2d');
           ctx.drawImage(img);
