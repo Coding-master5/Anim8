@@ -40,9 +40,11 @@
     <header style='background:#2d3859;padding:100px;margin-left:-300px;'>
       <h1 style='color:#fff;margin-left:350px;'>Anim8 documentation</h1>
     </header>
-    <%
-      Response.write(Request.QueryString)
-    %>
+    <script>
+      if ('?q=' in window.location) {
+        document.body.appendChild(window.location.substr(56, window.location.length));
+      }
+    </script>
     <i>Notice: this site is unfinished. Please refer to the README.md file in the GitHub repository or the JavaScript code for tutorial information.</i>
   </body>
 </html>
