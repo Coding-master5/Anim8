@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Anim8or</title>
+    <link rel='icon' type='image/x-icon' href='https://coding-masert5.github.io/Anim8/docs/logo.svg'>
+    <script src='https://coding-master5/github.io/Anim8/main.js'></script>
+  </head>
+  <body>
+    <h1>Anim8 interpreter</h1>
+    <textarea id='code'></textarea>
+    <button onclick='parseCode()'>Run</button>
+    <script>
+      function parseCode() {
+        var anim8 = new Anim8();
+        anim8.parse(document.getElementById('code').value);
+      }
+    </script>
+  </body>
+</html>
