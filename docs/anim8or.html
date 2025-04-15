@@ -12,7 +12,8 @@
     <script>
       function parseCode() {
         var anim8 = new Anim8();
-        document.body.appendChild(anim8.parse(document.getElementById('code').value));
+        var img = document.createElement('img');
+        img.src = anim8.parse(document.getElementById('code').value);
       }
     </script>
   </body>
