@@ -12,7 +12,7 @@
     <script>
       function parseCode() {
         var anim8 = new Anim8();
-        anim8.parse(document.getElementById('code').value);
+        document.body.appendChild(anim8.parse(document.getElementById('code').value));
       }
     </script>
   </body>
